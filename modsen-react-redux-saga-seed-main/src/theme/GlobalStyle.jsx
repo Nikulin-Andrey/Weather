@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import sunny from '@/assets/sunny.jpg'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -19,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
     
     & > #root {
       width: 100%;
-      height: 100%;
-      min-height: 700px;
+      height: 100vh;
+      background: url(${sunny}) no-repeat center/cover;
     }
   }
 

@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: ${({ theme }) => theme.breakpoints.desktop.maxWidth}px;
+  width: 100%;
+  height: 100%;
 `
 
 export const Content = styled.main`
-  margin: ${({ theme }) => theme.spacing(4)}px;
+  height: 80%;
 `

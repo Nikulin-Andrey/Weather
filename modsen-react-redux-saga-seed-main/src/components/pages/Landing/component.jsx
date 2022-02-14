@@ -1,15 +1,20 @@
 import React from 'react'
 
-import ExampleFetcher from '@/components/blocks/ExampleFetcher'
 import BasicLayout from '@/components/layouts/Basic'
+import DateTime from '@/components/blocks/DateTime'
+import Place from '@/components/blocks/Place/component'
+import Weather from '@/components/blocks/Weather'
 
-import { Container } from './styles'
+import { Container, InfoContainer } from './styles'
 
 const Landing = () => (
   <BasicLayout>
     <Container>
-      <h1>Landing Page</h1>
-      <ExampleFetcher />
+      <InfoContainer>
+        <DateTime />
+        <Place />
+      </InfoContainer>
+      <Weather />
     </Container>
   </BasicLayout>
 )

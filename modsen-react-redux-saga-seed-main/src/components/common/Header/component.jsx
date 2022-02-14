@@ -1,9 +1,12 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Container, ActiveApi, ChangeApi } from './styles'
 
 const Header = () => (
-  <Container>I am a header</Container>
+  <Container>
+    <ActiveApi>Active Api</ActiveApi>
+    <ChangeApi>Change Api</ChangeApi>
+  </Container>
 )
 
 export default Header
