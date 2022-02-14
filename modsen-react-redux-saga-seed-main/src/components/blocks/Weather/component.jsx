@@ -1,18 +1,51 @@
 import React from 'react'
 
-import { Container, Today, Days, Day } from './styles'
+import Day from '@/components/common/Day'
+
+import { Container, Today, Days } from './styles'
 
 const Weather = () => {
   return (
     <Container>
-      <Today></Today>
+      <Today>
+        <Day
+          today
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+      </Today>
       <Days>
-        <Day></Day>
-        <Day></Day>
-        <Day></Day>
-        <Day></Day>
-        <Day></Day>
-        <Day></Day>
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
+        <Day
+          name="today"
+          temperature={10}
+          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+        />
       </Days>
     </Container>
   )

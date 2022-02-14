@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     & > #root {
       width: 100%;
       height: 100vh;
+      min-height: 700px;
       background: url(${sunny}) no-repeat center/cover;
     }
   }
