@@ -4,7 +4,7 @@ export const Container = styled.div`
   text-align: end;
 `
 
-export const PlaceInput = styled.input`
+export const PlaceInput = styled.span`
   font-size: ${({ theme }) => theme.fonts.huge}px;
   color: ${({ theme }) => theme.colors.font};
   font-weight: ${({ theme }) => theme.fonts.weight};

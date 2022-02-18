@@ -5,7 +5,7 @@ import { Container, PlaceInput } from './styles'
 const Place = () => {
   return (
     <Container>
-      <PlaceInput value="Minsk" />
+      <PlaceInput>Current country</PlaceInput>
     </Container>
   )
 }

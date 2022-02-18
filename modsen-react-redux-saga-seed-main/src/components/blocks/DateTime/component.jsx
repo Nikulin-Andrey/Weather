@@ -3,7 +3,8 @@ import React from 'react'
 import { Container, CurrentDate, Time } from './styles'
 
 const DateTime = () => {
-  const date = new Date()
+  const date = new Date('2018-01-12T17:00:00+00:00')
+
   const time = date.toLocaleTimeString()
 
   return (

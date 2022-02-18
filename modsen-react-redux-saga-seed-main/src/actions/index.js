@@ -1,1 +1,2 @@
-export * from './example'
+export * from './weather'
+export * from './thunks'

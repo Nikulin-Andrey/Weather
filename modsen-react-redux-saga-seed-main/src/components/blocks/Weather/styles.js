@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  position: absolute;
+  bottom: 0;
   width: 100%;
   display: flex;
   background: ${({ theme }) => theme.colors.sunny};
   opacity: ${({ theme }) => theme.opacity};
   padding: 0 ${({ theme }) => theme.spacing(10)}px;
-  height: 40%;
+  height: 30%;
   justify-content: space-between;
 `
 

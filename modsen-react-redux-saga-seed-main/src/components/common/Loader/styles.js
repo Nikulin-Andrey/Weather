@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: 10em;
     height: 10em;
   }
-  
+
   & {
     margin: 60px auto;
     font-size: 10px;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     border-top: 1.1em solid rgba(255, 255, 255, 0.2);
     border-right: 1.1em solid rgba(255, 255, 255, 0.2);
     border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
-    border-left: 1.1em solid ${({ theme }) => theme.colors.primary};
+    border-left: 1.1em solid cornflowerblue;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);

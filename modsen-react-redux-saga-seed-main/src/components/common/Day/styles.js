@@ -6,8 +6,9 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: ${({ theme }) => theme.spacing(3)}px 0;
+  padding: ${({ theme }) => theme.spacing(3)}px;
   position: relative;
+  flex: 1;
 `
 
 export const Info = styled.div`
@@ -15,6 +16,7 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: ${({ today }) => (today ? 'auto' : '100%')};
+  width: ${({ today }) => (today ? 'auto' : '100%')};
   font-size: ${({ theme, today }) =>
     today ? theme.fonts.big : theme.fonts.medium}px;
 `
@@ -31,7 +33,7 @@ export const Temperature = styled.span``
 export const Icon = styled.img`
   position: ${({ today }) =>
     today ? 'static' : 'absolute'};
-  width: ${({ today }) => (today ? '50%' : '90%')};
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(

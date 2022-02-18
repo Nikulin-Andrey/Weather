@@ -4,7 +4,6 @@ export const Container = styled.header`
   padding: ${({ theme }) => theme.spacing(4)}px
     ${({ theme }) => theme.spacing(10)}px;
   font-size: ${({ theme }) => theme.fonts.big}px;
-  height: 20%;
   display: flex;
   justify-content: space-between;
 `

@@ -4,48 +4,28 @@ import Day from '@/components/common/Day'
 
 import { Container, Today, Days } from './styles'
 
-const Weather = () => {
+import { icons } from '@/constants/icons'
+
+const Weather = ({ now, nextDays }) => {
   return (
     <Container>
       <Today>
         <Day
           today
           name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+          temperature={now}
+          icon={icons.fewClouds}
         />
       </Today>
       <Days>
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
-        <Day
-          name="today"
-          temperature={10}
-          icon="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-        />
+        {nextDays.map(day => (
+          <Day
+            key={day.name}
+            name={day.name}
+            temperature={day.airTemperature.noaa}
+            icon={icons[day.weatherType]}
+          />
+        ))}
       </Days>
     </Container>
   )
